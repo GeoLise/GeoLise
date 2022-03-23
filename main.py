@@ -5,5 +5,5 @@ bot = telebot.TeleBot(token)
 
 @bot.message_handler(commands=['start'])
 def start(message):
-    bot.send_message(message.chat.id, text="Привет")
+    bot.send_message(message.chat.id, text="Привет, {0.first_name}! Я тестовый бот.".format(message.from_user), reply_markup=markup)
     
