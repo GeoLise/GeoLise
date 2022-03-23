@@ -3,7 +3,7 @@ from telebot import types
 token = '5230048546:AAHvCul2FoIWxU5lfGUT7zmVQPsiJ8iPdKA'
 bot = telebot.TeleBot(token)
 
-@bot.message_handler(commands=['start'])
+@bot.message_handler(commands=['r'])
 def start(message):
-    bot.send_message(message.chat.id, text="Привет, {0.first_name}! Я тестовый бот.".format(message.from_user), reply_markup=markup)
+    bot.send_message(message.chat.id, text="Привет, {0.first_name}! Я тестовый бот".format(message.from_user), reply_markup=markup)
  
