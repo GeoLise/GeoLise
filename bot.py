@@ -15,7 +15,6 @@ def start(message):
 @bot.message_handler(content_types='text')
 def message_reply(message):
     if message.text=="Глава 1":
-        markup=types.ReplyKeyboardMarkup(resize_keyboard=True)
         item4=types.KeyboardButton("123")
         item5=types.KeyboardButton("23")
         item6=types.KeyboardButton("1")
