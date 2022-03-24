@@ -17,7 +17,7 @@ def message_reply(message):
     if (message.text=="Глава 1"):
         markup=types.ReplyKeyboardMarkup(resize_keyboard=False)
         bot.send_message(message.chat.id, text="Привет")
-        markup=types.ReplyKeyboardMarkup(resize_keyboard=True)
+        #markup=types.ReplyKeyboardMarkup(resize_keyboard=True)
         item4=types.KeyboardButton("fgfh")
         item5=types.KeyboardButton("ghm")
         item6=types.KeyboardButton("gkjhn")
