@@ -15,7 +15,6 @@ def start(message):
 @bot.message_handler(content_types='text')
 def message_reply(message):
     if message.text=="Глава 1":
-        d
         def gl1(message):
             markup=types.ReplyKeyboardMarkup(resize_keyboard=True)
             item1=types.KeyboardButton("fgfh")
