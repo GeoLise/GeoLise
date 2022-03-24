@@ -16,8 +16,9 @@ def start(message):
 def message_reply(message):
     if message.text=="Глава 1":
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        item1 = types.KeyBoardButton("Gfh")
+        item1 = types.KeyBoardButton("АПР")
         markup.add(item1)
+        bot.send_message(message.chat.id, text="Привет")
     if message.text=="Глава 2":
         bot.send_message(message.chat.id, "vk.com/goshkazavr")
 
