@@ -15,6 +15,7 @@ def start(message):
 @bot.message_handler(content_types='text')
 def message_reply(message):
     if (message.text=="Глава 1"):
+        markup=types.ReplyKeyboardMarkup(resize_keyboard=False)
         bot.send_message(message.chat.id, text="Привет")
         markup=types.ReplyKeyboardMarkup(resize_keyboard=True)
         item4=types.KeyboardButton("fgfh")
