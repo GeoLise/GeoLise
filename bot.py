@@ -12,14 +12,10 @@ def start(message):
     markup.add(item1, item2, item3)
     bot.send_message(message.chat.id, text="Привет, {0.first_name}!".format(message.from_user), reply_markup=markup)
 
-@bot.message_handler(content_types='Глава 1')
-def gl1(message):
-    markup=types.ReplyKeyboardMarkup(resize_keyboard=True)
-    item1=types.KeyboardButton("fgfh")
-    item2=types.KeyboardButton("ghm")
-    item3=types.KeyboardButton("gkjhn")
-    markup.add(item1, item2, item3)
-    bot.send_message(message.chat.id, text="Привет")
+@bot.message_handler(content_types='text')
+def message_reply(message):
+    if (message.text=='Глава 1"):
+        bot.send_message(message.chat.id, text="Привет")
 
 @bot.message_handler(content_types='text')
 def game(message):
