@@ -14,9 +14,9 @@ def start(message):
 
 @bot.message_handler(content_types='text')
 def message_reply(message):
-    if message.text=="Кнопка":
+    if message.text=="Глава 1":
         bot.send_photo(message.chat.id, photo=open('vze2.jpg', 'rb'))
-    if message.text=="Кнопка2":
+    if message.text=="Глава 2":
         bot.send_message(message.chat.id, "vk.com/goshkazavr")
 
 @bot.message_handler(content_types='text')
