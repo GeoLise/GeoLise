@@ -13,13 +13,16 @@ def start(message):
     bot.send_message(message.chat.id, text="Привет, {0.first_name}!".format(message.from_user), reply_markup=markup)
 
 @bot.message_handler(content_types='text')
-if (message.text=="Глава 1"):
-bot.send_message(message.chat.id, text="Привет")
-markup=types.ReplyKeyboardMarkup(resize_keyboard=True)
-item4=types.KeyboardButton("fgfh")
-item5=types.KeyboardButton("ghm")
-item6=types.KeyboardButton("gkjhn")
-markup.add(item4, item5, item6)
+def message_reply(message):
+    if message.text=="Глава 1":
+        markup=types.ReplyKeyboardMarkup(resize_keyboard=True)
+        item1=types.KeyboardButton("fgfh")
+        item2=types.KeyboardButton("ghm")
+        item3=types.KeyboardButton("gkjhn")
+        markup.add(item1, item2, item3)
+        bot.send_message(message.chat.id, text="Привет")
+    elif message.text=="Глава 2":
+        bot.send_message(message.chat.id, "vk.com/goshkazavr")
 
 @bot.message_handler(content_types='text')
 def game(message):
