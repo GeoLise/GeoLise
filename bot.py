@@ -14,7 +14,7 @@ def start(message):
 
 @bot.message_handler(content_types='text')
 def message_reply(message):
-    if (message.text=='Глава 1"):
+    if (message.text=="Глава 1"):
         bot.send_message(message.chat.id, text="Привет")
 
 @bot.message_handler(content_types='text')
