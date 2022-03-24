@@ -21,7 +21,7 @@ def message_reply(message):
             item1=types.KeyboardButton("fgfh")
             item2=types.KeyboardButton("ghm")
             item3=types.KeyboardButton("gkjhn")
-            markup.add(item1, item2, item3)
+            markup_reply.add(item1, item2, item3)
             bot.send_message(message.chat.id, text="Привет")
     if message.text=="Глава 2":
         bot.send_message(message.chat.id, "vk.com/goshkazavr")
