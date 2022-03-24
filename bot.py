@@ -16,6 +16,11 @@ def start(message):
 def message_reply(message):
     if (message.text=="Глава 1"):
         bot.send_message(message.chat.id, text="Привет")
+        markup=types.ReplyKeyboardMarkup(resize_keyboard=True)
+        item4=types.KeyboardButton("fgfh")
+        item5=types.KeyboardButton("ghm")
+        item6=types.KeyboardButton("gkjhn")
+        markup.add(item4, item5, item6)
 
 @bot.message_handler(content_types='text')
 def game(message):
